@@ -9,3 +9,8 @@ for (let i = 1; i <= 5; i++) {
   sum += i;
   console.log("Current Num:", i, "Sum:", sum);
 }
+
+//was not understanding on line 9, how the code was to sum += 1 was not yielding
+//the expected output in the Learn platform. After being walked through the code,
+//the 1 in line 9 was changed to i to reach the expected output which is adding
+//the sum to the stored variable.
