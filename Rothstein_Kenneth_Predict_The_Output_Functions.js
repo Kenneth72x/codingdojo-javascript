@@ -21,3 +21,15 @@ console.log(result1);
 console.log(result2);
 //my predicted output:
 //Summing Numbers!, num1 is: 3, num2 is: 5, 8, Summing Numbers!, num1 is: 4, num2 is: 7, 11, 8, 11
+
+//Predict 3
+function highFive(num) {
+  for (var i = 0; i < num; i++) {
+    if (i == 5) {
+      console.log("High Five!");
+    } else {
+      console.log(i);
+    }
+  }
+}
+//my predicted output: no output because the function is not being called.
