@@ -1,4 +1,13 @@
-//Get 1 to 255: Write a function that returns an array with all the numbers from 1 to 255.
+//Get 1 to 255: Write a function that returns an array with all the numbers from 1 to 255 inside.
+function emptyArr() {
+  var arr = [];
+  for (var i = 1; i <= 255; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
+var result = emptyArr();
+console.log(result);
 
 //Get even 100: Write a function that would get the sum of all the even numbers from 1 to 1000. You may use a modulus operator for this exercise.
 
