@@ -9,8 +9,17 @@ function emptyArr() {
 var result = emptyArr();
 console.log(result);
 
-//Get even 100: Write a function that would get the sum of all the even numbers from 1 to 1000. You may use a modulus operator for this exercise.
-
+//Get even 1000: Write a function that would get the sum of all the even numbers from 1 to 1000. You may use a modulus operator for this exercise.
+function getSum() {
+  var sum = 0;
+  for (var i = 1; i <= 1000; i++) {
+    if (i % 2 == 0) {
+      sum = sum + i;
+    }
+  }
+  return sum;
+}
+console.log(getSum());
 //Sum odd 5000: Write a function that returns the sum of all the odd numbers from 1 to 5000. (e.g.1+3+5...+4997+4999).
 
 //Iterate an array: Write a function that returs the sum of all the values within an array. (e.g.[1,2,5] returns 8. [-5,2,5,12]returns 14).
