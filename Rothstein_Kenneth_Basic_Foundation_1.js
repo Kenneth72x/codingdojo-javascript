@@ -1,4 +1,4 @@
-//Get 1 to 255: Write a function that returns an array with all the numbers from 1 to 255 inside.
+//Objective 1: Get 1 to 255: Write a function that returns an array with all the numbers from 1 to 255 inside.
 function emptyArr() {
   var arr = [];
   for (var i = 1; i <= 255; i++) {
@@ -9,7 +9,7 @@ function emptyArr() {
 var result = emptyArr();
 console.log(result);
 
-//Get even 1000: Write a function that would get the sum of all the even numbers from 1 to 1000. You may use a modulus operator for this exercise.
+//Objective 2: Get even 1000: Write a function that would get the sum of all the even numbers from 1 to 1000. You may use a modulus operator for this exercise.
 function getSum() {
   var sum = 0;
   for (var i = 1; i <= 1000; i++) {
@@ -20,7 +20,18 @@ function getSum() {
   return sum;
 }
 console.log(getSum());
-//Sum odd 5000: Write a function that returns the sum of all the odd numbers from 1 to 5000. (e.g.1+3+5...+4997+4999).
+
+//Objective 3: Sum odd 5000: Write a function that returns the sum of all the odd numbers from 1 to 5000. (e.g.1+3+5...+4997+4999).
+function getSumOdd() {
+  var sum = 0;
+  for (var i = 1; i <= 5000; i++) {
+    if (i % 2 == 1) {
+      sum = sum + i;
+    }
+  }
+  return sum;
+}
+console.log(getSumOdd());
 
 //Iterate an array: Write a function that returs the sum of all the values within an array. (e.g.[1,2,5] returns 8. [-5,2,5,12]returns 14).
 
