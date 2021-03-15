@@ -101,6 +101,15 @@ squares([1, -2, 5, 10]);
 
 //Objective 10: Negatives: Given an array with multiple values, write a function that replaces any negative numbers within the array with the value of 0.
 //  When the program is done the array should contain no negative values. (e.g. [1,5,10,-2] will become [1,5,10,0]).
+function noNegatives(arr) {
+  for (var idx = 0; idx < arr.length; idx++) {
+    if (arr[idx] < 0) {
+      arr[idx] = 0;
+    }
+  }
+  console.log(arr);
+}
+noNegatives([1, 5, 10, -2]);
 
 //Objective 11: Max/Min/Avg: Given an array with multiple values, write a function that returns a new array that onnly contains the maximum, minimum and average values
 //  of the original array. (e.g. [1,5,10,-2] will return [10,-2,3,5]).
