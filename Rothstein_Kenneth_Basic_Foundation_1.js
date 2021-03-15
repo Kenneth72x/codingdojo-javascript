@@ -137,6 +137,14 @@ console.log(maxMinAvg([1, 5, 10, -2]));
 
 //Objective 12: Swap Values: Write a function that will swap the first and last values of any given array. The default minimum length of an array is 2. (e.g.[1,5,10,-2]
 //  will become [-2,5,10,1]).
+function swap(arr) {
+  var temp = arr[arr.length - 1];
+  arr[arr.length - 1] = arr[0];
+  arr[0] = temp;
+}
+var tester = [1, 5, 10, -2];
+swap(tester);
+console.log(tester);
 
 //Objective 13: Number to String: Write a funciton that takes an array of numbers and replaces any negative values within the array with the string 'Dojo'. For example,
 //  if array=[-1,3,2], your function will return ['Dojo', 'Dojo', 2].
