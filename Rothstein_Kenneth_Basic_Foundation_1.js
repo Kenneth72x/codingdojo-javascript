@@ -33,28 +33,36 @@ function getSumOdd() {
 }
 console.log(getSumOdd());
 
-//Iterate an array: Write a function that returs the sum of all the values within an array. (e.g.[1,2,5] returns 8. [-5,2,5,12]returns 14).
+//Objective 4: Iterate an array: Write a function that returs the sum of all the values within an array. (e.g.[1,2,5] returns 8. [-5,2,5,12]returns 14).
+function iterate(numArr) {
+  var sum = 0;
+  for (var i = 0; i < numArr.length; i++) {
+    sum = sum + numArr[i];
+  }
+  return sum;
+}
+console.log(iterate([1, 2, 4]));
 
-//Find max: Given an array with multiple values, write a function that returns the average of the values in the array. (e.g.for [-3,3,5,7]max is 7).
+//Objective 5: Find max: Given an array with multiple values, write a function that returns the average of the values in the array. (e.g.for [-3,3,5,7]max is 7).
 
-//Find average: Given an arraywith multiple values, wirte a function that returns the average of the values in the array. (e.g. [1,3,5,7,20]average is 7.2).
+//Objective 6: Find average: Given an arraywith multiple values, wirte a function that returns the average of the values in the array. (e.g. [1,3,5,7,20]average is 7.2).
 
-//Array odd: Write a function that would return an array of all the odd numbers between 1 to 50. (ex. [1,3,5...47,49]). Hint: use 'push method.'
+//Objective 7: Array odd: Write a function that would return an array of all the odd numbers between 1 to 50. (ex. [1,3,5...47,49]). Hint: use 'push method.'
 
-//Greater than Y: Given a value of Y, write a function that takes an array and returns the number of values that are greater than Y. For example,
+//Objective 8: Greater than Y: Given a value of Y, write a function that takes an array and returns the number of values that are greater than Y. For example,
 //  if array=[1,3,5,7] and Y=3, your function will return 2. (There are two values in the array greater than 3, which are 5,7.).
 
-//Squares: Given an array with multiple values, write a function that replaces each value in the array with the value squred by itself.
+//Objective 9: Squares: Given an array with multiple values, write a function that replaces each value in the array with the value squred by itself.
 //  (ex. [1,5,10,-2] will become [1,25,100,4]).
 
-//Negatives: Given an array with multiple values, write a function that replaces any negative numbers within the array with the value of 0.
+//Objective 10: Negatives: Given an array with multiple values, write a function that replaces any negative numbers within the array with the value of 0.
 //  When the program is done the array should contain no negative values. (e.g. [1,5,10,-2] will become [1,5,10,0]).
 
-//Max/Min/Avg: Given an array with multiple values, write a function that returns a new array that onnly contains the maximum, minimum and average values
+//Objective 11: Max/Min/Avg: Given an array with multiple values, write a function that returns a new array that onnly contains the maximum, minimum and average values
 //  of the original array. (e.g. [1,5,10,-2] will return [10,-2,3,5]).
 
-//Swap Values: Write a function that will swap the first and last values of any given array. The default minimum length of an array is 2. (e.g.[1,5,10,-2]
+//Objective 12: Swap Values: Write a function that will swap the first and last values of any given array. The default minimum length of an array is 2. (e.g.[1,5,10,-2]
 //  will become [-2,5,10,1]).
 
-//Number to String: Write a funciton that takes an array of numbers and replaces any negative values within the array with the string 'Dojo'. For example,
+//Objective 13: Number to String: Write a funciton that takes an array of numbers and replaces any negative values within the array with the string 'Dojo'. For example,
 //  if array=[-1,3,2], your function will return ['Dojo', 'Dojo', 2].
