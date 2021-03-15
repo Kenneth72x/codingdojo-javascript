@@ -112,7 +112,28 @@ function noNegatives(arr) {
 noNegatives([1, 5, 10, -2]);
 
 //Objective 11: Max/Min/Avg: Given an array with multiple values, write a function that returns a new array that onnly contains the maximum, minimum and average values
-//  of the original array. (e.g. [1,5,10,-2] will return [10,-2,3,5]).
+//  of the original array. (e.g. [1,5,10,-2] will return [10,-2,3.5]).
+function maxMinAvg(arr) {
+  var sum = 0;
+  var max = arr[0];
+  var min = arr[0];
+  for (var idx = 0; idx < arr.length; idx++) {
+    sum = sum + arr[idx];
+    if (arr[idx] > max) {
+      max = arr[idx];
+    } else if (arr[idx] < min) {
+      min = arr[idx];
+    }
+  }
+  var newArr = [];
+  newArr.push(max);
+  newArr.push(min);
+  var avg = sum / arr.length;
+  newArr.push(avg);
+
+  return newArr;
+}
+console.log(maxMinAvg([1, 5, 10, -2]));
 
 //Objective 12: Swap Values: Write a function that will swap the first and last values of any given array. The default minimum length of an array is 2. (e.g.[1,5,10,-2]
 //  will become [-2,5,10,1]).
