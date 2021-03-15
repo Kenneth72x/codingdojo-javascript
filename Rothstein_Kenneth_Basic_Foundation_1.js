@@ -56,6 +56,15 @@ function findMax(numArr) {
 console.log(findMax([-3, 3, 5, 7]));
 
 //Objective 6: Find average: Given an arraywith multiple values, wirte a function that returns the average of the values in the array. (e.g. [1,3,5,7,20]average is 7.2).
+function findAvg(numArr) {
+  var sum = 0;
+  for (var i = 0; i < numArr.length; i++) {
+    sum = sum + numArr[i];
+  }
+  avg = sum / numArr.length;
+  return avg;
+}
+console.log(findAvg([1, 3, 5, 7, 20]));
 
 //Objective 7: Array odd: Write a function that would return an array of all the odd numbers between 1 to 50. (ex. [1,3,5...47,49]). Hint: use 'push method.'
 
