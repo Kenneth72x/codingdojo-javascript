@@ -67,6 +67,14 @@ function findAvg(numArr) {
 console.log(findAvg([1, 3, 5, 7, 20]));
 
 //Objective 7: Array odd: Write a function that would return an array of all the odd numbers between 1 to 50. (ex. [1,3,5...47,49]). Hint: use 'push method.'
+function oddArray() {
+  var arr = [];
+  for (var x = 1; x < 50; x += 2) {
+    arr.push(x);
+  }
+  return arr;
+}
+console.log(oddArray());
 
 //Objective 8: Greater than Y: Given a value of Y, write a function that takes an array and returns the number of values that are greater than Y. For example,
 //  if array=[1,3,5,7] and Y=3, your function will return 2. (There are two values in the array greater than 3, which are 5,7.).
