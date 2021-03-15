@@ -147,4 +147,13 @@ swap(tester);
 console.log(tester);
 
 //Objective 13: Number to String: Write a funciton that takes an array of numbers and replaces any negative values within the array with the string 'Dojo'. For example,
-//  if array=[-1,3,2], your function will return ['Dojo', 'Dojo', 2].
+//  if array=[-1,-3,2], your function will return ['Dojo', 'Dojo', 2].
+function noNegativesDojo(arr) {
+  for (var idx = 0; idx < arr.length; idx++) {
+    if (arr[idx] < 0) {
+      arr[idx] = "Dojo";
+    }
+  }
+  console.log(arr);
+}
+noNegativesDojo([-1, -3, 2]);
