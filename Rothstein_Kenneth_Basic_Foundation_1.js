@@ -43,7 +43,17 @@ function iterate(numArr) {
 }
 console.log(iterate([1, 2, 4]));
 
-//Objective 5: Find max: Given an array with multiple values, write a function that returns the average of the values in the array. (e.g.for [-3,3,5,7]max is 7).
+//Objective 5: Find max: Given an array with multiple values, write a function that returns the average of the values in the array. (e.g.for [-3,3,5,7] max is 7).
+function findMax(numArr) {
+  var max = numArr[0];
+  for (var i = 0; i < numArr.length; i++) {
+    if (numArr[i] > max) {
+      max = numArr[i];
+    }
+  }
+  return max;
+}
+console.log(findMax([-3, 3, 5, 7]));
 
 //Objective 6: Find average: Given an arraywith multiple values, wirte a function that returns the average of the values in the array. (e.g. [1,3,5,7,20]average is 7.2).
 
